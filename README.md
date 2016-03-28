@@ -2,6 +2,10 @@
 
 Created by Microsoft Corporation, 2016. Provided as-is without warranty. Trademarks mentioned here are the property of their owners.
 
+### Scenario
+
+When a teacher leaves the school, or changes classes, it is common for the need to transfer one or more class notebooks from the old teacher to the new teacher.  This script will allow the IT Admin to copy all of the Class Notebook contents of the old teacher’s OneDrive over to the new teacher’s OneDrive.  The script will also re-trigger the provisioning and permissioning apis to ensure that the class notebook in the new location is properly set up, and all of the contents of the Collaboration Space, Content Library and Student Notebooks are properly set up.  In addition, an email will be sent to all students in the class with a link to open the notebook in the new teacher’s OneDrive location.
+
 ### API functionality demonstrated in this sample
 
 The following aspects of the API are covered in this sample. 
@@ -13,7 +17,7 @@ The following aspects of the API are covered in this sample.
 
 * [Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure) - used to obtain an access token to talk to the OneNote Class Notebooks API.
 * [Two Office 365 account with OneDrive set up](https://portal.office.com) - This sample will transfer a notebook located on a teacher's OneDrive and transfer it to the other teacher's OneDrive. To ensure that your OneDrive is set up, log on to [Office 365](https://portal.office.com) and click the blue "OneDrive" icon in the app launcher. If you are taken to your OneDrive, you are all set.
-* One Class Notebook created using our [OneNote Class Notebooks API](https://github.com/OneNoteDev/OneNoteClassNotebookAPISamplePowerShell) - this is the notebook the sample will transfer between the teachers.
+* OneNote Class Notebook created using our [OneNote Class Notebooks API](https://github.com/OneNoteDev/OneNoteClassNotebookAPISamplePowerShell) - this is the notebook the sample will transfer between the teachers.
 * IT Admin with permissions on both teacher's OneDrive [See guide](http://www.sharepointdiary.com/2015/08/sharepoint-online-add-site-collection-administrator-using-powershell.html)
 
 
@@ -30,13 +34,13 @@ The following aspects of the API are covered in this sample.
 2. Download this repo as a ZIP file to your local computer, and extract the files. Or, clone the repository into a local copy of Git.
 
 3. Edit OneNoteClassNotebooksApiSample.ps1. Find and replace the following tokens with real values:
-   * &lt;AZURE_AD_TENANT_NAME&gt; - This is your Azure tenant, e.g. "contoso.com".
+   * &lt;AZURE_AD_TENANT_NAME&gt; - This is your Office 365 tenant, e.g. "contoso.com".
    * &lt;CLIENT_ID&gt; - This is the client ID of your app, e.g. "471afe29-4aee-4bc5-9aaf-468ee5bbe20a".
    * &lt;MY_ADMIN_LOGIN&gt; - This is your IT Admin Office 365 login name.
    * &lt;MY_ADMIN_PASSWORD&gt; - This is your IT Admin Office 365 password.
    * &lt;NOTEBOOK_ID&gt; - This is the Id of the notebook to be transfered.
-   * &lt;SOURCE_TEACHER_ID&gt; - This is the login name of the teacher that owns the notebook.
-   * &lt;DESTINATION_TEACHER_ID&gt; - This is the login name of the teacher that will receive the notebook.
+   * &lt;SOURCE_TEACHER_ID&gt; - This is the login name of the original teacher that owns the notebook.
+   * &lt;DESTINATION_TEACHER_ID&gt; - This is the login name of the new teacher that will receive the notebook.
 
 4. Once all the placeholders above have been replaced with real values (remember to enclose each value in double quotes), simply execute the script.
 

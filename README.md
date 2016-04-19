@@ -18,7 +18,7 @@ The following aspects of the API are covered in this sample.
 * [Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure) - used to obtain an access token to talk to the OneNote Class Notebooks API.
 * [Two Office 365 account with OneDrive set up](https://portal.office.com) - This sample will transfer a notebook located on a teacher's OneDrive and transfer it to the other teacher's OneDrive. To ensure that your OneDrive is set up, log on to [Office 365](https://portal.office.com) and click the blue "OneDrive" icon in the app launcher. If you are taken to your OneDrive, you are all set.
 * OneNote Class Notebook created using our [OneNote Class Notebooks API](https://github.com/OneNoteDev/OneNoteClassNotebookAPISamplePowerShell) - this is the notebook the sample will transfer between the teachers.
-* IT Admin with permissions on both teacher's OneDrive [See guide](http://www.sharepointdiary.com/2015/08/sharepoint-online-add-site-collection-administrator-using-powershell.html)
+* IT Admin with permissions on both teacher's OneDrive. [See guide](http://www.sharepointdiary.com/2015/08/sharepoint-online-add-site-collection-administrator-using-powershell.html)
 
 
 ### Using the sample

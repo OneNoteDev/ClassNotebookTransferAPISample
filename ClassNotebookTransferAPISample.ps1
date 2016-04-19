@@ -47,13 +47,12 @@ $accessToken = $authResult.AccessToken;
 # Create a new class notebook
 $transferJson = @"
 {
-    SourceId: "$notebookId",
-    SourceUserId: "$sourceTeacherLogin",
-    DestinationUserId: "$destinationTeacherLogin"
+    sourceUserId: "$sourceTeacherLogin",
+    destinationUserId: "$destinationTeacherLogin"
 }
 "@
 
-$transfer = Invoke-RestMethod https://www.onenote.com/api/v0.1/classnotebook/transfer `
+$transfer = Invoke-RestMethod https://www.onenote.com/api/v1.0/me/notes/classnotebooks/$notebookId/Microsoft.OneNote.Api.NotebookTransfer `
     -Method POST `
     -ContentType "application/json; charset=utf-8" `
     -Headers @{"Authorization" = "Bearer $accessToken"} `

@@ -62,3 +62,5 @@ This is the initial public release for this code sample.
 * Follow us on [Twitter @onenotedev](http://www.twitter.com/onenotedev)
 * Read our [OneNote Developer blog](http://go.microsoft.com/fwlink/?LinkID=390183)
 * [Debugging / Troubleshooting](http://msdn.microsoft.com/EN-US/library/office/dn575430.aspx)
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
